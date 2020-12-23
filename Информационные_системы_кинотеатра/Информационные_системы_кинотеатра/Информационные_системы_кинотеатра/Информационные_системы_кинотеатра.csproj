@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E68EB48E-8E6A-47DF-AD50-2FC8F2A77E51}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Информационные_системы_кинотеатра</RootNamespace>
+    <AssemblyName>Информационные_системы_кинотеатра</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddFilm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddFilm.Designer.cs">
+      <DependentUpon>AddFilm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administator.cs" />
+    <Compile Include="ClientsPersonalAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientsPersonalAccount.Designer.cs">
+      <DependentUpon>ClientsPersonalAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FilmOFClienta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FilmOFClienta.Designer.cs">
+      <DependentUpon>FilmOFClienta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Logger.cs" />
+    <Compile Include="LogOut.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LogOut.Designer.cs">
+      <DependentUpon>LogOut.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainFormAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainFormAdmin.Designer.cs">
+      <DependentUpon>MainFormAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainFormUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainFormUser.Designer.cs">
+      <DependentUpon>MainFormUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PurchasedFILM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PurchasedFILM.Designer.cs">
+      <DependentUpon>PurchasedFILM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegistrationUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistrationUser.Designer.cs">
+      <DependentUpon>RegistrationUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SearchFilm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchFilm.Designer.cs">
+      <DependentUpon>SearchFilm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SessionTicket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SessionTicket.Designer.cs">
+      <DependentUpon>SessionTicket.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User.cs" />
+    <EmbeddedResource Include="AddFilm.resx">
+      <DependentUpon>AddFilm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientsPersonalAccount.resx">
+      <DependentUpon>ClientsPersonalAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FilmOFClienta.resx">
+      <DependentUpon>FilmOFClienta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogOut.resx">
+      <DependentUpon>LogOut.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainFormAdmin.resx">
+      <DependentUpon>MainFormAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainFormUser.resx">
+      <DependentUpon>MainFormUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="PurchasedFILM.resx">
+      <DependentUpon>PurchasedFILM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistrationUser.resx">
+      <DependentUpon>RegistrationUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchFilm.resx">
+      <DependentUpon>SearchFilm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SessionTicket.resx">
+      <DependentUpon>SessionTicket.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
